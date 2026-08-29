@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard – DevBlog</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-require-auth="true">
+
+<div class="orb orb-purple"></div>
+<div class="orb orb-blue"></div>
+<div class="orb orb-small"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">Dev<span>Blog</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="dashboard.html" data-page="dashboard.html">Dashboard</a>
+      <a href="create-blog.html" data-page="create-blog.html">Create Blog</a>
+      <a href="login.html" data-page="login.html">Login</a>
+      <a href="register.html" data-page="register.html">Register</a>
+      <div class="nav-actions-mobile" id="navActionsMobile"></div>
+    </nav>
+
+    <div class="nav-actions" id="navActions"></div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="container dashboard-header fade-in">
+  <h1>Welcome back, Developer 👋</h1>
+  <p>Manage your stories and track your writing journey.</p>
+</div>
+
+<div class="container">
+
+  <!-- ===================== STATS ===================== -->
+  <div class="stats-grid">
+    <div class="glass stat-card">
+      <div>
+        <div class="stat-number" id="statTotal">0</div>
+        <div class="stat-label">Total Posts</div>
+      </div>
+      <div class="stat-icon">📚</div>
+    </div>
+
+    <div class="glass stat-card">
+      <div>
+        <div class="stat-number" id="statPublished">0</div>
+        <div class="stat-label">Published</div>
+      </div>
+      <div class="stat-icon">✅</div>
+    </div>
+
+    <div class="glass stat-card">
+      <div>
+        <div class="stat-number" id="statDrafts">0</div>
+        <div class="stat-label">Drafts</div>
+      </div>
+      <div class="stat-icon">📝</div>
+    </div>
+
+    <div class="glass stat-card">
+      <div>
+        <div class="stat-number" id="statViews">0</div>
+        <div class="stat-label">Total Views</div>
+      </div>
+      <div class="stat-icon">👁️</div>
+    </div>
+  </div>
+
+  <!-- ===================== BLOG MANAGEMENT ===================== -->
+  <div class="dashboard-section-head">
+    <h2>Your Stories</h2>
+    <div style="display:flex; gap:12px;">
+      <a href="create-blog.html" class="btn btn-primary">+ Create New Blog</a>
+      <button class="btn btn-outline" data-logout>Logout</button>
+    </div>
+  </div>
+
+  <div class="blog-list" id="blogList"></div>
+
+  <div class="glass empty-state" id="emptyState" style="display:none;">
+    <div class="empty-icon">🗒️</div>
+    <h3>No stories yet</h3>
+    <p>You haven't written anything yet. Start your first story now.</p>
+    <a href="create-blog.html" class="btn btn-primary">+ Create New Blog</a>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
