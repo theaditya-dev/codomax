@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register – DevBlog</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="orb orb-purple"></div>
+<div class="orb orb-blue"></div>
+
+<div class="auth-wrapper">
+  <div class="glass auth-card fade-in">
+    <a href="index.html" class="logo">Dev<span>Blog</span></a>
+
+    <h1>Create Your Account</h1>
+    <p class="auth-subtitle">Join the community and start sharing your stories.</p>
+
+    <form id="registerForm" novalidate>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" class="form-control" placeholder="Your full name" autocomplete="name">
+        <div class="field-error" id="nameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="you@example.com" autocomplete="email">
+        <div class="field-error" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="At least 6 characters" autocomplete="new-password">
+        <div class="field-error" id="passwordError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" class="form-control" placeholder="Re-enter your password" autocomplete="new-password">
+        <div class="field-error" id="confirmError"></div>
+      </div>
+
+      <div class="terms-row">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the <a href="#" class="forgot-link">Terms &amp; Conditions</a></label>
+      </div>
+      <div class="field-error" id="termsError" style="margin-top:-14px; margin-bottom:14px;"></div>
+
+      <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+    </form>
+
+    <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

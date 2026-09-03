@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile – DevBlog</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-require-auth="true">
+
+<div class="orb orb-purple"></div>
+<div class="orb orb-blue"></div>
+<div class="orb orb-small"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">Dev<span>Blog</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="dashboard.html" data-page="dashboard.html">Dashboard</a>
+      <a href="create-blog.html" data-page="create-blog.html">Create Blog</a>
+      <a href="login.html" data-page="login.html">Login</a>
+      <a href="register.html" data-page="register.html">Register</a>
+      <div class="nav-actions-mobile" id="navActionsMobile"></div>
+    </nav>
+
+    <div class="nav-actions" id="navActions"></div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== PROFILE ===================== -->
+<div class="auth-wrapper" style="min-height: unset; padding-top: 60px;">
+  <div class="glass auth-card fade-in" id="profileCard" style="max-width:480px;"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

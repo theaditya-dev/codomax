@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login – DevBlog</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="orb orb-purple"></div>
+<div class="orb orb-blue"></div>
+
+<div class="auth-wrapper">
+  <div class="glass auth-card fade-in">
+    <a href="index.html" class="logo">Dev<span>Blog</span></a>
+
+    <h1>Welcome Back</h1>
+    <p class="auth-subtitle">Login to continue your writing journey.</p>
+
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="you@example.com" autocomplete="email">
+        <div class="field-error" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter your password" autocomplete="current-password">
+        <div class="field-error" id="passwordError"></div>
+      </div>
+
+      <div class="form-row-between">
+        <label class="checkbox-row">
+          <input type="checkbox" id="rememberMe">
+          Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+
+    <p class="auth-switch">Don't have an account? <a href="register.html">Create one</a></p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
